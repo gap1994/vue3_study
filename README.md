@@ -2,6 +2,9 @@
 
 ### 学习vue3
 
+自己看官网文档学习
+[vue3](https://cli.vuejs.org/zh/)、[vite](https://cn.vitejs.dev/)、[vant](https://vant-contrib.gitee.io/vant/v3/#/zh-CN)
+
 #### 简单的安装一下环境
 1. 安装node.js(版本 >= 12.0.0)
 2. 打开cmd，运行`npm install -g @vue/cli`安装vue，验证`vue --version`
