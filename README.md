@@ -1,8 +1,10 @@
 # vue3_study
 
-学习vue3
+### 学习vue3
+
+#### 简单的安装一下环境
 1. 安装node.js(版本 >= 12.0.0)
-2. 打开cmd，安装`vue npm install -g @vue/cli`，验证`vue --version`
+2. 打开cmd，运行`npm install -g @vue/cli`安装vue，验证`vue --version`
 3. `npm init @vitejs/app`，拉取官网模板，选vue，vue-ts的模板，随便起个名字
 4. `npm install`，接下来初始化
 5. `npm run dev`，跑起来吧
