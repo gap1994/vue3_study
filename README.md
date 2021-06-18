@@ -1,6 +1,6 @@
 # vue3_study
 
-### 学习vue3
+### 学习vue3,适配手机端
 
 自己看官网文档学习
 [vue3](https://cli.vuejs.org/zh/)、[vite](https://cn.vitejs.dev/)、[vant](https://vant-contrib.gitee.io/vant/v3/#/zh-CN)
