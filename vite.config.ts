@@ -1,22 +1,23 @@
-import { UserConfigExport } from 'vite'
+import { UserConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import { resolve } from 'path'
 import styleImport from 'vite-plugin-style-import'
-import path from 'path'
+import autoprefixer from "autoprefixer"
 import pxtoviewport from 'postcss-px-to-viewport'
+const path = (dir: string): string => resolve(__dirname, dir)
 
-const resolve = (dir: string): string => path.join(__dirname, dir)
-
-export default (): UserConfigExport => {
+export default (): UserConfig => {
   return {
     resolve: {
       alias: {
-        '@': resolve('./src')
+        '@': path('./src')
       }
     },
     css: {
       postcss: {
         // 配置px自动转vw
         plugins: [
+          autoprefixer(),
           pxtoviewport({
             viewportWidth: 375
           })
