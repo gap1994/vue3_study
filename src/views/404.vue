@@ -1,11 +1,7 @@
 <template>
-  <div class="404">
-    <h1>This is an about page</h1>
-    <van-button type="primary">主要按钮</van-button>
-    <van-button type="success">成功按钮</van-button>
-    <van-button type="default">默认按钮</van-button>
-    <van-button type="warning">警告按钮</van-button>
-    <van-button type="danger">危险按钮</van-button>
+  <div class="page-404">
+    <h1>This is an 404 page</h1>
+    <van-button type="primary" to="/">回到首页</van-button>
   </div>
 </template>
 <script lang="ts">
@@ -15,4 +11,12 @@ export default {
   },
 }
 </script>
+<style lang="scss" scoped>
+.page-404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+</style>
 
