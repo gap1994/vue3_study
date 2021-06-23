@@ -4,14 +4,22 @@ import { resolve } from 'path'
 import styleImport from 'vite-plugin-style-import'
 import autoprefixer from "autoprefixer"
 import pxtoviewport from 'postcss-px-to-viewport'
+
 const path = (dir: string): string => resolve(__dirname, dir)
 
 export default (): UserConfig => {
   return {
     resolve: {
-      alias: {
-        '@': path('./src')
-      }
+      alias: [
+        {
+          find: /^~/,
+          replacement: "",
+        },
+        {
+          find: '@',
+          replacement: path('./src')
+        }
+      ]
     },
     css: {
       postcss: {
@@ -22,6 +30,14 @@ export default (): UserConfig => {
             viewportWidth: 375
           })
         ]
+      },
+      preprocessorOptions: {
+        less: {
+          modifyVars: {
+            // 或者可以通过 less 文件覆盖（文件路径为绝对路径）
+            hack: `true; @import "@/plugins/vant.less";`,
+          },
+        },
       }
     },
     plugins: [
