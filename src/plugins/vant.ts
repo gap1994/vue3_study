@@ -1,7 +1,39 @@
 import { App } from "vue";
-import { Button, List, Cell, Tabbar, TabbarItem, Swipe, SwipeItem, Grid, GridItem, NavBar, Icon, Sticky, Card,Sidebar, SidebarItem } from "vant";
+import { 
+  Button,
+  Card,
+  Cell,
+  Grid,
+  GridItem,
+  Icon,
+  List,
+  NavBar,
+  Sidebar,
+  SidebarItem,
+  Sticky,
+  Swipe,
+  SwipeItem,
+  Tabbar,
+  TabbarItem
+} from "vant";
 
-const plugins = [ Button, List, Cell, Tabbar, TabbarItem, Swipe, SwipeItem, Grid, GridItem, NavBar, Icon, Sticky, Card,Sidebar, SidebarItem ];
+const plugins = [
+  Button,
+  Card,
+  Cell,
+  Grid,
+  GridItem,
+  Icon,
+  List,
+  NavBar,
+  Sidebar,
+  SidebarItem,
+  Sticky,
+  Swipe,
+  SwipeItem,
+  Tabbar,
+  TabbarItem
+];
 
 export const vantPlugins = {
   install: function(app: App) {
