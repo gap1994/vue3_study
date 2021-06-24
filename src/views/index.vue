@@ -30,24 +30,31 @@
 <script lang="ts">
 import { reactive, ref, toRefs } from 'vue'
 import { getUserInfo, loginApi } from '@/api/user'
+import { useRouter } from "vue-router"
 export default {
-  setup() {
+  setup(prop) {
+    const router = useRouter()
+
     const state = reactive({
-      username: '',
-      password: '',
+      username: 'admin',
+      password: '123456',
       type: 'login',
       verify: ''
     })
 
     const onSubmit = async (values:any) => {
-      console.log(values)
       loginApi({
         username: state.username,
         password: state.password
-      }).then(( data ) => {
-        console.log(data)
+      }).then(( data: Recordable ) => {
+        if (data.code === 0) {
+          router.push({ name: 'home' })
+        } else {
+          
+        }
       })
     }
+
     return {
       state,
       onSubmit
