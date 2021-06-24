@@ -31,10 +31,11 @@
 import { reactive, ref, toRefs } from 'vue'
 import { getUserInfo, loginApi } from '@/api/user'
 import { useRouter } from "vue-router"
-export default {
-  setup(prop) {
-    const router = useRouter()
+import { Toast } from 'vant'
 
+export default {
+  setup(prop, context) {
+    const router = useRouter()
     const state = reactive({
       username: 'admin',
       password: '123456',
@@ -44,13 +45,13 @@ export default {
 
     const onSubmit = async (values:any) => {
       loginApi({
-        username: state.username,
-        password: state.password
+        username: values.username,
+        password: values.password
       }).then(( data: Recordable ) => {
         if (data.code === 0) {
           router.push({ name: 'home' })
         } else {
-          
+          Toast(data.message)
         }
       })
     }
