@@ -15,6 +15,8 @@ import {
   Sticky,
   Swipe,
   SwipeItem,
+  Tab,
+  Tabs,
   Tabbar,
   TabbarItem
 } from "vant";
@@ -35,6 +37,8 @@ const plugins = [
   Sticky,
   Swipe,
   SwipeItem,
+  Tab,
+  Tabs,
   Tabbar,
   TabbarItem
 ];
