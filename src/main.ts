@@ -4,7 +4,7 @@ import router from '@/router'
 import store from '@/store'
 import { vantPlugins } from '@/plugins/vant'
 import 'vant/lib/index.less'
-import { createPermission } from '@/router/auth'
+import { createPermission } from '@/router/permission'
 
 createPermission(router)
 

@@ -5,7 +5,6 @@ const whiteList:Array<RouteRecordName>  = ['login', '404']
 
 export function createPermission(router: Router) {
   router.beforeEach((to, from, next) => {
-    console.log(store.state)
     if (whiteList.indexOf(to.name || '') >= 0) {
       next()
     } else {

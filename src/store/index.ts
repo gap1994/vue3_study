@@ -18,6 +18,9 @@ export default createStore({
     }
   },
   modules: {
-  }
+  },
+  plugins: [
+    createPersistedState({ key: 'vue3_study' })
+  ]
 })
 
