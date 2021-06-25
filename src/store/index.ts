@@ -5,10 +5,17 @@ import createPersistedState from 'vuex-persistedstate'
 
 export default createStore({
   state: {
+    token: ''
   },
   mutations: {
+    setToken (state, token: string) {
+      state.token = token
+    }
   },
   actions: {
+    setToken (context, token: string) {
+      context.commit('setToken', token)
+    }
   },
   modules: {
   }
