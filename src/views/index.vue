@@ -11,7 +11,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import BaseVue from '@/views/modules/base/index.vue'
 export default {
   data() {
