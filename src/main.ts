@@ -5,10 +5,14 @@ import store from '@/store'
 import { vantPlugins } from '@/plugins/vant'
 import 'vant/lib/index.less'
 import { createPermission } from '@/router/permission'
+import 'highlight.js/styles/atom-one-dark-reasonable.css'
+import hljsVuePlugin from "@/plugins/hljs"
 
 createPermission(router)
 
-createApp(App)
-.use(store)
+const app = createApp(App)
+app.use(store)
 .use(router)
-.use(vantPlugins).mount('#app')
+.use(vantPlugins)
+.use(hljsVuePlugin)
+.mount('#app')
