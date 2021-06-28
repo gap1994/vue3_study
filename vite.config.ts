@@ -32,15 +32,6 @@ export default ({ command }: ConfigEnv): UserConfig => {
             viewportWidth: 375
           })
         ]
-      },
-      preprocessorOptions: {
-        less: {
-          javascriptEnabled: true,
-          modifyVars: {
-            // 或者可以通过 less 文件覆盖（文件路径为绝对路径）
-            hack: `true; @import "@/plugins/vant.less";`,
-          },
-        },
       }
     },
     plugins: [
