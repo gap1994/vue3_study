@@ -55,9 +55,6 @@ export default defineComponent({
     attrClick() {
       const el: any = this.$refs.demo1
       Toast(el.getAttribute('title'))
-    },
-    goback() {
-      this.$router.go(-1)
     }
   },
   setup() {
@@ -111,8 +108,3 @@ Vue.createApp(Counter).mount('#counter')`
   }
 })
 </script>
-<style scoped>
-.root {
-  padding: 4vw;
-}
-</style>

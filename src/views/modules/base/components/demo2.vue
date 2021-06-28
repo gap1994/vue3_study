@@ -57,8 +57,3 @@ Vue.createApp(TwoWayBinding).mount('#two-way-binding')`
   }
 })
 </script>
-<style scoped>
-.root {
-  padding: 4vw;
-}
-</style>

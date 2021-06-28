@@ -31,6 +31,10 @@ export default defineComponent({
         {
           title: '生命周期钩子',
           name: 'demo5'
+        },
+        {
+          title: '计算属性和侦听器',
+          name: 'demo6'
         }
       ]
     }
