@@ -27,6 +27,11 @@ const routes: Array<RouteRecordRaw> = [
     name: 'demo2',
     component: () => import('@/views/modules/base/components/demo2.vue')
   },
+  {
+    path: '/demo3',
+    name: 'demo3',
+    component: () => import('@/views/modules/base/components/demo3.vue')
+  },
 ]
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),

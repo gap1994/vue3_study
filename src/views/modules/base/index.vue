@@ -19,6 +19,10 @@ export default defineComponent({
         {
           title: '处理用户输入',
           name: 'demo2'
+        },
+        {
+          title: '条件与循环',
+          name: 'demo3'
         }
       ]
     }
