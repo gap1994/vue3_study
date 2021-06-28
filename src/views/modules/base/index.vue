@@ -23,6 +23,10 @@ export default defineComponent({
         {
           title: '条件与循环',
           name: 'demo3'
+        },
+        {
+          title: '组件化应用构建',
+          name: 'demo4'
         }
       ]
     }
