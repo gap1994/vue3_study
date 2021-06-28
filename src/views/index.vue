@@ -1,19 +1,17 @@
 <template>
-  <van-config-provider :theme-vars="themeVars">
-    <div class="top-bar">
-      <div class="left"></div>
-      <div class="title">vue3_study</div>
-      <div class="right"><van-button size="small" icon="wap-nav" type="primary" /></div>
-    </div>
-    <van-tabs v-model:active="tab">
-      <van-tab title="基础">
-        <base-vue />
-      </van-tab>
-      <van-tab title="组件"></van-tab>
-      <van-tab title="过渡"></van-tab>
-      <van-tab title="组合"></van-tab>
-    </van-tabs>
-  </van-config-provider>
+  <div class="top-bar">
+    <div class="left"></div>
+    <div class="title">vue3_study</div>
+    <div class="right"><van-button size="small" icon="wap-nav" type="primary" /></div>
+  </div>
+  <van-tabs v-model:active="tab">
+    <van-tab title="基础">
+      <base-vue />
+    </van-tab>
+    <van-tab title="组件"></van-tab>
+    <van-tab title="过渡"></van-tab>
+    <van-tab title="组合"></van-tab>
+  </van-tabs>
 </template>
 
 <script lang="ts">
@@ -21,12 +19,7 @@ import BaseVue from '@/views/modules/base/index.vue'
 export default {
   data() {
     return {
-      tab: 0,
-      themeVars: {
-        buttonPrimaryBorderColor: '#3eaf7c',
-        buttonPrimaryBackgroundColor: '#3eaf7c',
-        primaryColor: '#3eaf7c'
-      }
+      tab: 0
     }
   },
   components: {
