@@ -43,6 +43,9 @@ export default defineComponent({
       this.counter++
     }, 1000)
   },
+  unmounted() {
+    this.stopTimer()
+  },
   methods: {
     stopTimer() {
       if (this.inter) {

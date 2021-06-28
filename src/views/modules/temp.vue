@@ -26,7 +26,11 @@ export default defineComponent ({
   },
   methods: {
     goback() {
-      this.$router.go(-1)
+      if (window.history.length <= 1) {
+        this.$router.push({ path:'/' })
+      } else {
+        this.$router.go(-1)
+      }
     }
   },
   setup: (props) => {

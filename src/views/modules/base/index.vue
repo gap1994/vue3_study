@@ -27,6 +27,10 @@ export default defineComponent({
         {
           title: '组件化应用构建',
           name: 'demo4'
+        },
+        {
+          title: '生命周期钩子',
+          name: 'demo5'
         }
       ]
     }

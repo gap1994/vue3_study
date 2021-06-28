@@ -21,6 +21,9 @@ export default {
 }
 </script>
 <style lang="scss">
+img {
+  width: 100%;
+}
 pre code.hljs {
   display: block;
   overflow-x: auto;
