@@ -1,9 +1,11 @@
 <template>
-  <div class="top-bar">
-    <div class="left"></div>
-    <div class="title">vue3_study</div>
-    <div class="right"><van-button size="small" icon="wap-nav" type="primary" /></div>
-  </div>
+  <van-sticky>
+    <div class="top-bar">
+      <div class="left"></div>
+      <div class="title">vue3_study</div>
+      <div class="right"></div>
+    </div>
+  </van-sticky>
   <van-tabs v-model:active="tab">
     <van-tab title="基础">
       <base-vue />
@@ -34,8 +36,8 @@ export default {
   align-items: center;
   justify-content: space-between;
   padding: 6px 4vw;
-  box-shadow: 0 1px 12px 3px #eee;
   margin-bottom: 4px;
+  background: #fff;
   .left,.right {
     width: 10vw;
   }

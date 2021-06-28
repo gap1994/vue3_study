@@ -11,7 +11,10 @@ export default {
       themeVars: {
         buttonPrimaryBorderColor: '#3eaf7c',
         buttonPrimaryBackgroundColor: '#3eaf7c',
-        primaryColor: '#3eaf7c'
+        primaryColor: '#3eaf7c',
+        tabsBottomBarColor: '#3eaf7c',
+        navBarIconColor: '#3eaf7c',
+        navBarTextColor: '#3eaf7c'
       }
     }
   }
