@@ -18,14 +18,14 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('@/views/index.vue')
   },
   {
-    path: '/home',
-    name: 'home',
-    component: () => import('@/views/modules/home.vue')
-  },
-  {
     path: '/demo1',
     name: 'demo1',
     component: () => import('@/views/modules/base/components/demo1.vue')
+  },
+  {
+    path: '/demo2',
+    name: 'demo2',
+    component: () => import('@/views/modules/base/components/demo2.vue')
   },
 ]
 const router = createRouter({

@@ -15,6 +15,10 @@ export default defineComponent({
         {
           title: '声明式渲染',
           name: 'demo1'
+        },
+        {
+          title: '处理用户输入',
+          name: 'demo2'
         }
       ]
     }

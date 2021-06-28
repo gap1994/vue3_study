@@ -1,36 +1,36 @@
 <template>
-  <van-nav-bar
-    title="声明渲染"
-    left-text="返回"
-    left-arrow
-    @click-left="goback"
-  />
-  <div class="root">
-    <h1>代码片段</h1>
-    <hljs :code="html"/>
-    <hljs :code="js"/>
-    <h1>例子</h1>
-    <div id="counter">
-      Counter: {{ counter }}
-    </div>
-    <van-button
-      type="primary"
-      @click="stopTimer"
-    >停止</van-button>
-    <p
-      ref="demo1"
-      :title="message"
-      @click="attrClick">
-      点击查看此处动态绑定的提示信息！
-    </p>
-  </div>
+  <temp
+    title="声明式渲染"
+    :html="html"
+    :js="js"
+  >
+    <template v-slot:example>
+      <div id="counter">
+        Counter: {{ counter }}
+      </div>
+      <van-button
+        type="primary"
+        @click="stopTimer"
+      >停止</van-button>
+      <p
+        ref="demo1"
+        :title="message"
+        @click="attrClick">
+        点击查看此处动态绑定的提示信息！
+      </p>
+    </template>
+  </temp>
 </template>
 
 <script lang="ts">
 import { defineComponent, onMounted } from 'vue'
+import temp from '@/views/modules/temp.vue'
 import { Toast } from 'vant'
 export default defineComponent({
   name: 'demo1',
+  components: {
+    temp
+  },
   data() {
     return {
       counter: 0,
