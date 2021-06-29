@@ -34,6 +34,10 @@ export default ({ command }: ConfigEnv): UserConfig => {
         ]
       }
     },
+    server: {
+      host: '127.0.0.1',
+      port: 80
+    },
     plugins: [
       vue(),
       styleImport({
