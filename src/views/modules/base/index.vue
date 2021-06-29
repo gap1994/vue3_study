@@ -35,6 +35,10 @@ export default defineComponent({
         {
           title: '计算属性和侦听器',
           name: 'demo6'
+        },
+        {
+          title: 'Class 与 Style 绑定',
+          name: 'demo7'
         }
       ]
     }
