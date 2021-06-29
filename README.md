@@ -38,3 +38,9 @@ vue插件用[Vetur](https://marketplace.visualstudio.com/items?itemName=octref.v
 2. 删除`src/shims-vue.d.ts`（如果你不需要模块详情）
 3. 打开命令面板
 4. 设置ts版本为当前工作区版本
+
+### 本项目运行
+
+1. clone项目到本地
+2. `npm install`
+3. `npm run dev`
