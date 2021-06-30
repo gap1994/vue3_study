@@ -39,6 +39,10 @@ export default defineComponent({
         {
           title: 'Class 与 Style 绑定',
           name: 'demo7'
+        },
+        {
+          title: '条件渲染',
+          name: 'demo8'
         }
       ]
     }
